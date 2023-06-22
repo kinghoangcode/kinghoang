@@ -8,19 +8,23 @@
 
 .king-page {
   font-size: 14px;
+  max-width: 375px;
+  margin: 0 auto;
 }
 .king-page .king-header {
   position: fixed;
-  background-color: #002b1a;
   top: 0;
   left: 0;
   right: 0;
-  padding: 8px 15px 0;
 }
 .king-page .king-header .king-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 345px;
+  padding: 8px 15px 0;
+  margin: 0 auto;
+  background-color: #002b1a;
 }
 .king-page .king-header .king-navbar .king-brand-name {
   text-transform: uppercase;
