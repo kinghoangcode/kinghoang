@@ -1,0 +1,104 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.king-page {
+    font-size: 14px;
+
+    .king-header {
+        position: fixed;
+        background-color: #002b1a;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 8px 15px 0;
+
+        .king-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .king-brand-name {
+                text-transform: uppercase;
+                font-size: 13px;
+                color: #ebd97e;
+            }
+
+            .king-brand-coffee {
+                font-family: 'Comforter', cursive;
+                font-size: 42px;
+                color: #ebd97e;
+            }
+
+            .king-brand {
+                position: relative;
+                padding-top: 30px;
+                /*background-image: url('../imgs/crown-vector.jpg');*/
+
+                .king-crown {
+                    width: 80px;
+                    position: absolute;
+                    top: -3px;
+                    left: -3px;
+                }
+            }
+        }
+    }
+
+    .king-body {
+        margin-top: 67px;
+
+        .coffee-card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 8px;
+                left: 11px;
+                width: 16px;
+                height: 10px;
+                background-color: #4d5f22;
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                width: 11px;
+                height: 9px;
+                background-color: #012c1b;
+                border-radius: 50%;
+            }
+
+            .coffee-img {
+                width: 100%;
+                padding-top: 10px;
+                background-color: #002b1a;
+            }
+
+            .coffee-order-btn {
+                background-color: #002b1a;
+                color: #fff;
+                padding: 6px 8px;
+                border-radius: 25px;
+                font-size: 24px;
+                text-transform: uppercase;
+                border: none;
+                min-width: 200px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
