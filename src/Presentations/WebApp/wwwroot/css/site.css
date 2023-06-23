@@ -3,6 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "Mukta", sans-serif;
 }
 
@@ -92,4 +95,36 @@
   border: none;
   min-width: 200px;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+.king-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.king-popup .king-popup-content {
+  padding: 15px;
+}
+.king-popup .king-popup-content .king-popup-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+.king-popup .king-popup-content .king-popup-header .king-popup-header-title {
+  font-family: "Comforter", cursive;
+}
+.king-popup .king-popup-content .king-popup-header .king-popup-header-close {
+  display: none;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+.king-popup .king-popup-content .king-popup-body {
+  margin-top: 15px;
+  border: 1px solid #ddd;
 }
