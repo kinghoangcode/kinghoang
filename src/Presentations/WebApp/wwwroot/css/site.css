@@ -13,7 +13,7 @@ body {
 
 .king-page {
   font-size: 14px;
-  max-width: 768px;
+  max-width: 468px;
   margin: 0 auto;
 }
 .king-page .king-header {
@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 738px;
+  max-width: 438px;
   padding: 8px 15px 0;
   margin: 0 auto;
   background-color: #002b1a;
@@ -146,7 +146,7 @@ body {
   z-index: 2;
 }
 .king-popup .king-popup-content {
-  max-width: 738px;
+  max-width: 438px;
   margin: auto;
   background-color: #fff;
   padding: 10px 15px 15px;
@@ -261,11 +261,14 @@ body {
   z-index: 1;
 }
 
-@media (min-width: 768px) {
-  .king-page .king-body {
-    margin-bottom: 30px;
-  }
-  .king-page .king-footer {
-    position: unset;
-  }
-}
+/*@media (min-width: 768px) {
+    .king-page {
+        .king-body {
+            margin-bottom: 30px;
+        }
+
+        .king-footer {
+            position: unset;
+        }
+    }
+}*/
