@@ -1,5 +1,4 @@
-﻿/*@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
@@ -8,7 +7,6 @@
 }
 
 body {
-    /*font-family: 'Mukta', sans-serif;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -121,13 +119,14 @@ body {
 
             .coffee-intro-discription {
                 font-size: 26px;
-                color: #053b25;
+                color: #f53838;
+                /*color: #666666;*/
                 font-family: "Comforter", cursive;
                 margin-top: 5px;
             }
 
             .coffee-order-btn {
-                background-color: #053b25;
+                background-color: #0b4b30;
                 color: #fff;
                 padding: 8px;
                 border-radius: 25px;
@@ -135,7 +134,7 @@ body {
                 text-transform: uppercase;
                 border: none;
                 min-width: 200px;
-                margin-top: 10px;
+                margin-top: 15px;
                 cursor: pointer;
             }
         }
