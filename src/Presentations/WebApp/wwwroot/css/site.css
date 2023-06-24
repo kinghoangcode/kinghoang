@@ -13,20 +13,20 @@ body {
 
 .king-page {
   font-size: 14px;
-  max-width: 375px;
+  max-width: 768px;
   margin: 0 auto;
 }
 .king-page .king-header {
-  position: fixed;
+  /*position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0;*/
 }
 .king-page .king-header .king-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 345px;
+  max-width: 738px;
   padding: 8px 15px 0;
   margin: 0 auto;
   background-color: #002b1a;
@@ -34,8 +34,8 @@ body {
 .king-page .king-header .king-navbar .king-brand-name {
   text-transform: uppercase;
   color: #ebd97e;
+  text-align: center;
   font-size: 11px;
-  font-family: "Montserrat", sans-serif;
   /*font-size: 13px;
   font-family: 'Mukta', sans-serif;*/
 }
@@ -58,41 +58,61 @@ body {
   left: -2px;
 }
 .king-page .king-body {
-  margin-top: 67px;
+  /*margin-top: 67px;*/
 }
-.king-page .king-body .coffee-card {
+.king-page .king-body .coffee-section {
+  text-align: center;
+}
+.king-page .king-body .coffee-section .coffee-card {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.king-page .king-body .coffee-card::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 11px;
-  width: 16px;
-  height: 10px;
-  background-color: #4d5f22;
-  border-radius: 50%;
-}
-.king-page .king-body .coffee-card::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  width: 11px;
-  height: 9px;
-  background-color: #012c1b;
-  border-radius: 50%;
-}
-.king-page .king-body .coffee-card .coffee-img {
+.king-page .king-body .coffee-section .coffee-card .coffee-img {
   width: 100%;
-  padding-top: 10px;
-  background-color: #002b1a;
 }
-.king-page .king-body .coffee-card .coffee-order-btn {
+.king-page .king-body .coffee-section .coffee-card .coffee-intro {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Comforter", cursive;
+}
+.king-page .king-body .coffee-section .coffee-card .coffee-intro .coffee-intro-title {
+  font-size: 32px;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+}
+.king-page .king-body .coffee-section .coffee-card .coffee-intro .coffee-intro-amount {
+  font-size: 54px;
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  right: 27%;
+}
+.king-page .king-body .coffee-section .coffee-card .coffee-intro .coffee-intro-amount-1 {
+  font-size: 80px;
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  right: 26%;
+}
+.king-page .king-body .coffee-section .coffee-intro-discription {
+  font-size: 26px;
+  color: #053b25;
+  font-family: "Comforter", cursive;
+  margin-top: 5px;
+}
+.king-page .king-body .coffee-section .coffee-order-btn {
   background-color: #053b25;
   color: #fff;
   padding: 8px;
@@ -101,7 +121,7 @@ body {
   text-transform: uppercase;
   border: none;
   min-width: 200px;
-  margin-top: 15px;
+  margin-top: 10px;
   cursor: pointer;
 }
 .king-page .king-footer {
@@ -113,7 +133,8 @@ body {
   padding: 5px;
 }
 .king-page .king-footer .king-email {
-  color: #002b1a;
+  color: #053b25;
+  font-size: 12px;
 }
 
 .king-popup {
@@ -125,7 +146,7 @@ body {
   z-index: 2;
 }
 .king-popup .king-popup-content {
-  max-width: 345px;
+  max-width: 738px;
   margin: auto;
   background-color: #fff;
   padding: 10px 15px 15px;
@@ -238,4 +259,13 @@ body {
   background-color: #333;
   opacity: 0.3;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .king-page .king-body {
+    margin-bottom: 30px;
+  }
+  .king-page .king-footer {
+    position: unset;
+  }
 }
