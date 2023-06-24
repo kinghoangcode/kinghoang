@@ -161,7 +161,7 @@ body {
   font-size: 48px;
 }
 .king-popup .king-popup-content .king-popup-header .king-popup-header-title {
-  color: #002b1a;
+  color: #0b4b30;
   font-family: "Comforter", cursive;
 }
 .king-popup .king-popup-content .king-popup-header .king-popup-header-close {
@@ -198,29 +198,17 @@ body {
 .king-popup .king-popup-content .king-popup-footer {
   text-align: center;
 }
-.king-popup .king-popup-content .king-popup-footer .coffee-submit-btn {
-  background-color: #053b25;
+.king-popup .king-popup-content .king-popup-footer .coffee-send-order-btn {
+  background-color: #0b4b30;
   color: #fff;
   padding: 8px;
   border-radius: 25px;
   font-size: 22px;
   text-transform: uppercase;
   border: none;
-  min-width: 165px;
+  min-width: 200px;
   margin-top: 15px;
   cursor: pointer;
-}
-.king-popup .king-popup-content .king-popup-footer .coffee-cancel-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  border: none;
-  font-size: 16px;
-  text-decoration: underline;
-  color: #053b25;
-  background-color: transparent;
-  padding: 15px;
 }
 .king-popup.popup-show {
   display: block;
@@ -232,6 +220,56 @@ body {
   bottom: -100%;
   animation: king-popup-hide 0.4s linear;
 }
+.king-popup.order-success-popup .king-popup-header {
+  justify-content: start;
+  font-size: 14px;
+  padding: 15px;
+}
+.king-popup.order-success-popup .king-popup-header .order-success-hey {
+  font-size: 16px;
+}
+.king-popup.order-success-popup .king-popup-header .order-success-user {
+  font-weight: bold;
+  color: #0b4b30;
+}
+.king-popup.order-success-popup .king-popup-header .order-success-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  cursor: pointer;
+}
+.king-popup.order-success-popup .king-popup-body {
+  padding: 15px 15px 0 15px;
+}
+.king-popup.order-success-popup .king-popup-body .order-success-notify {
+  text-align: center;
+}
+.king-popup.order-success-popup .king-popup-body .order-success-title {
+  margin-top: 15px;
+  font-size: 48px;
+  color: #008000;
+  font-family: "Comforter", cursive;
+}
+.king-popup.order-success-popup .king-popup-body .order-success-track-now {
+  display: inline-block;
+  color: #0b4b30;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid #0b4b30;
+  margin-top: 26px;
+  min-width: 180px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.king-popup.order-success-popup .king-popup-body .order-success-thankyou {
+  margin-top: 35px;
+  color: #0b4b30;
+}
+
 @keyframes king-popup-show {
   from {
     bottom: -100%;
@@ -248,7 +286,6 @@ body {
     bottom: -100%;
   }
 }
-
 .popup-backdrop {
   position: fixed;
   top: 0;

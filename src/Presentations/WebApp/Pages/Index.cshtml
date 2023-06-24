@@ -7,15 +7,15 @@
 <section class="coffee-section">
     <div class="coffee-card">
         @*<div class="coffee-intro">
-            <div class="coffee-intro-amount">
-            25K/ly
-            </div>
+        <div class="coffee-intro-amount">
+        25K/ly
+        </div>
         </div>
         <div class="coffee-intro">
-            <div class="coffee-intro-title">Đồng giá</div>
-            <div class="coffee-intro-amount-1">
-                25K
-            </div>
+        <div class="coffee-intro-title">Đồng giá</div>
+        <div class="coffee-intro-amount-1">
+        25K
+        </div>
         </div>*@
         @*<img class="coffee-img" src="https://caphemuoi.com.vn/wp-content/uploads/2023/01/6.png" style="opacity: 0.5;top: 22px;position: absolute;" />*@
         <img class="coffee-img" src="~/imgs/coffee-muoi-1.png" alt="coffee-muoi" />
@@ -29,7 +29,7 @@
     <button class="coffee-order-btn" type="button">Order Now</button>
 </section>
 
-<div class="king-popup" id="form-order-popup">
+<div class="king-popup form-order-popup" id="form-order-popup">
     <div class="king-popup-content">
         <div class="king-popup-header">
             <div class="king-popup-header-title">Your information</div>
@@ -62,8 +62,30 @@
             </div>
         </div>
         <div class="king-popup-footer">
-            <button class="coffee-submit-btn" type="button">Submit</button>
+            <button class="coffee-send-order-btn" type="button">Send Order</button>
             @*<button class="coffee-cancel-btn" type="button">Cancel</button>*@
+        </div>
+    </div>
+</div>
+
+<div class="king-popup order-success-popup" id="order-success-popup">
+    <div class="king-popup-content">
+        <div class="king-popup-header">
+            <div class="order-success-hey">Hey, <span class="order-success-user">Hemmyhtec!</span></div>
+            <svg class="order-success-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z" /></svg>
+        </div>
+        <div class="king-popup-body">
+            <div class="order-success-notify">
+                <svg xmlns="http://www.w3.org/2000/svg" width="186" height="186" viewBox="0 0 186 186" fill="none">
+                    <path d="M170.5 85.87V93C170.49 109.712 165.079 125.974 155.072 139.359C145.066 152.745 131 162.537 114.974 167.275C98.9475 172.014 81.8187 171.445 66.1421 165.653C50.4655 159.861 37.081 149.157 27.9849 135.137C18.8888 121.117 14.5683 104.532 15.6679 87.8564C16.7675 71.1804 23.2283 55.3065 34.0866 42.6023C44.9449 29.8981 59.619 21.0442 75.9204 17.3611C92.2218 13.6781 109.277 15.3631 124.542 22.165" stroke="#008000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M170.5 31L93 108.578L69.75 85.3275" stroke="#008000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="order-success-title">
+                    Order Successful
+                </div>
+                <a class="order-success-track-now" href="/Privacy">Track Now</a>
+                <div class="order-success-thankyou">Thank you!!!</div>
+            </div>
         </div>
     </div>
 </div>
