@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="coffee-section" hidden>
+<section class="coffee-section">
     <div class="coffee-card">
         @*<h5 class="coffee-title">Cà Phê Muối</h5>*@
         <img class="coffee-img" src="https://caphemuoi.com.vn/wp-content/uploads/2023/01/6.png" />
@@ -12,7 +12,7 @@
     </div>
 </section>
 
-<div class="king-popup">
+<div class="king-popup" id="form-order-popup">
     <div class="king-popup-content">
         <div class="king-popup-header">
             <div class="king-popup-header-title">Your information</div>
@@ -21,18 +21,32 @@
         <div class="king-popup-body">
             <div class="king-popup-form">
                 <div class="king-input-group">
-                    <label class="king-hoang-label" for="fullname">Fullname</label>
+                    <label class="king-hoang-label" for="fullname">Họ và tên:</label>
                     <input class="king-hoang-input" name="fullname" id="fullname" type="text" />
                 </div>
                 <div class="king-input-group">
-                    <label class="king-hoang-label" for="phoneNumber">Phone number</label>
-                    <input class="king-hoang-input" name="phoneNumber" id="phoneNumber" type="number" />
+                    <label class="king-hoang-label" for="phoneNumber">Số điện thoại:</label>
+                    <input class="king-hoang-input" name="phoneNumber" id="phoneNumber" type="text" />
                 </div>
                 <div class="king-input-group">
-                    <label class="king-hoang-label" for="address">Address</label>
+                    <label class="king-hoang-label" for="address">Địa chỉ:</label>
                     <input class="king-hoang-input" name="address" id="address" type="text" />
+                </div>
+                <div class="king-input-group">
+                    <label class="king-hoang-label" for="remark">Lời nhắn:</label>
+                    <textarea class="king-hoang-textarea" name="remark" id="remark" type="text" rows="3"></textarea>
                 </div>
             </div>
         </div>
+        <div class="king-popup-footer">
+            <button class="coffee-submit-btn" type="button">Submit</button>
+            @*<button class="coffee-cancel-btn" type="button">Cancel</button>*@
+        </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        //alert('jo');
+    </script>
+}

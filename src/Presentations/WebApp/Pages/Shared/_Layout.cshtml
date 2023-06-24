@@ -8,7 +8,7 @@
 </head>
 <body class="king-page">
 
-    <header class="king-header" hidden>
+    <header class="king-header">
         <div class="king-navbar">
             <div class="king-brand">
                 <img class="king-crown" src="~/imgs/Crown.png" alt="crown" />
@@ -24,6 +24,11 @@
         </main>
     </div>
 
+    <footer class="king-footer">
+        <a class="king-email" href="#">kinghoangtran@gmail.com</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
