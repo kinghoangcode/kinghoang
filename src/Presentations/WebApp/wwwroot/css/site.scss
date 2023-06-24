@@ -309,3 +309,21 @@ body {
         }
     }
 }*/
+
+
+.king-row {
+    display: flex;
+    justify-content: space-between;
+
+    .king-col {
+        width: 48%;
+    }
+
+    .king-col-2 {
+        width: 40%;
+    }
+
+    .king-col-3 {
+        width: 56%;
+    }
+}
