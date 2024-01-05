@@ -13,4 +13,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
 COPY --from=base /app/publish .
-ENTRYPOINT ["/Catalog.API"]
+ENTRYPOINT ["dotnet", "Catalog.API.dll"]
