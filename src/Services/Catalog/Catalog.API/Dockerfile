@@ -7,8 +7,8 @@ RUN dotnet restore
 COPY . .
 RUN dotnet publish -c Release -o /app/publish
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0
+FROM mcr.microsoft.com/dotnet/nightly/aspnet:8.0
 WORKDIR /app
 
 COPY --from=base /app/publish .
-ENTRYPOINT [ "dotnet", "Catalog.API.dll" ]
+ENTRYPOINT ["./Catalog.API"]
