@@ -3,10 +3,10 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-COPY *.csproj .
-RUN dotnet restore
+COPY Catalog.API/Catalog.API.csproj .
+RUN dotnet restore "Catalog.API/Catalog.API.csproj"
 
-COPY . .
+COPY Catalog.API/. .
 RUN dotnet publish -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
