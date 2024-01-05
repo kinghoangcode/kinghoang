@@ -1,14 +1,15 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS base
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
 WORKDIR /app
 
-COPY Catalog.API.csproj .
+COPY *.csproj .
 RUN dotnet restore
 
 COPY . .
-RUN dotnet publish --no-restore -o /app/publish
+RUN dotnet publish -c Release -o /app/publish
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+EXPOSE 8081
 WORKDIR /app
 
 COPY --from=base /app/publish .
-ENTRYPOINT ["./Catalog.API"]
+ENTRYPOINT ["dotnet", "Catalog.API.dll"]
