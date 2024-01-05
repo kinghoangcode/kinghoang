@@ -5,7 +5,7 @@ COPY Catalog.API.csproj .
 RUN dotnet restore
 
 COPY . .
-RUN dotnet publish-o /app/publish
+RUN dotnet publish --no-restore -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-jammy
 WORKDIR /app
