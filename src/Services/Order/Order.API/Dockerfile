@@ -3,7 +3,7 @@ WORKDIR /app
 EXPOSE 8081
 
 COPY Order.API.csproj .
-RUN dotnet restore "Order.API"
+RUN dotnet restore ./Order.API.sln
 
 COPY . .
 RUN dotnet publish -c Release -o /app/order
