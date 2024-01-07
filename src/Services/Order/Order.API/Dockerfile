@@ -10,6 +10,7 @@ RUN dotnet publish -c Release -o /app/order
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+EXPOSE 8081
 
 COPY --from=base /app/order .
 ENTRYPOINT ["dotnet", "Order.API.dll"]
