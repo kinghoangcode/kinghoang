@@ -2,8 +2,8 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS base
 WORKDIR /app
 EXPOSE 8081
 
-COPY Order.API.csproj .
-RUN dotnet restore ./Order.API.sln
+COPY *.csproj .
+RUN dotnet restore
 
 COPY . .
 RUN dotnet publish -c Release -o /app/order
