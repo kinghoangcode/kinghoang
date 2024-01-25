@@ -10,7 +10,7 @@ namespace Catalog.API
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("server=GETZ\\SQLEXPRESS;database=King.Catalog;trusted_connection=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=192.168.0.79,1433;database=King.Catalog;trusted_connection=true;TrustServerCertificate=True;");
         }
     }
 }
